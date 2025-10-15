@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("img/imagem6.jpeg") no-repeat center center/cover;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #00bfff;
+}
+
+header p {
+  color: #e0e0e0;
+  margin-top: 10px;
+}
+
+.group {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.group h2 {
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.students a {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.students a:hover {
+  background: #00bfff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00bfff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid #00bfff;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00bfff;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.contacts {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #00bfff;
+  transition: 0.3s;
+}
+
+.contact-link:hover::after {
+  width: 100%;
+}
+
+.contact-link:hover {
+  color: #00bfff;
+  transform: scale(1.1);
+}
+
+.footer-note {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #aaa;
+}
